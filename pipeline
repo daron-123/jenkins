@@ -16,7 +16,7 @@ node('docker-agent-php') {
         sh 'composer install'
     }
 
- 
+
     stage("PHPUnit") {
         sh './vendor/bin/phpunit test'
     }
